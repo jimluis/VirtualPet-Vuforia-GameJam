@@ -319,7 +319,7 @@ GameObject:
   - component: {fileID: 927381710}
   - component: {fileID: 927381709}
   m_Layer: 0
-  m_Name: ObjectTarget
+  m_Name: ObjectTarget_tree
   m_TagString: Healthy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -389,7 +389,7 @@ GameObject:
   - component: {fileID: 946035083}
   - component: {fileID: 946035082}
   m_Layer: 0
-  m_Name: ObjectTarget (1)
+  m_Name: ObjectTarget_car
   m_TagString: Unhealthy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
