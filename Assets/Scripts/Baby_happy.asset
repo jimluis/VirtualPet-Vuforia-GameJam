@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17de0ffed14fa2243a8b426b7261babc, type: 3}
+  m_Name: Baby_happy
+  m_EditorClassIdentifier: 
+  storyText: I like reusable things.
+  myClip: {fileID: 8300000, guid: 87caa7da83342d446ad520cbe53f9262, type: 3}
