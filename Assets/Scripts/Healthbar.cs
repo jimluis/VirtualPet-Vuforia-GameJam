@@ -8,12 +8,19 @@ public class Healthbar : MonoBehaviour
 
     public Transform bar;
     public static float currentHealth;
+    GameObject evolution;
 
+     void Awake()
+    {
+
+         evolution = GameObject.Find("Diatama_evolvedII");
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        currentHealth = .50f;
+        currentHealth = .75f;
+        evolution.SetActive(false);
     }
 
 
@@ -33,14 +40,21 @@ public class Healthbar : MonoBehaviour
 
                 currentHealth = .25f;
 
-               // var evolution = Resources.Load<GameObject>("Images/Diatama_evolved"); //("Diatama_evolved", typeof(GameObject));
-               var evolution = Resources.Load("Images/Diatama_evolved") as Texture2D;
-              //  GameObject evolution = Instantiate(Resources.Load("Diatama_evolved", typeof(GameObject))) as GameObject;
-              
-                  if (evolution != null)
+
+                // var evolution = Resources.Load("Assets/Images/Diatama_evolved") as Sprite;
+                // var evolution = Resources.Load<Sprite>("/Images/Diatama_evolved");
+                //  GameObject evolution = Instantiate(Resources.Load("Diatama_evolved", typeof(GameObject))) as GameObject;
+
+                //Diatama_evolvedII
+                //evolution = GameObject.Find("Diatama_evolvedII");
+                evolution.SetActive(true);
+                //evolution.transform.position = tmpCellTransform;
+                //evolution.SetActive(true);
+
+               // if (evolution != null)
                   Instantiate(evolution, tmpCellTransform, Quaternion.identity);
-                else
-                    Debug.Log("*** Healthbar - evolution not found ");
+               // else
+               //     Debug.Log("*** Healthbar - evolution not found ");
             }
             else
                 Debug.Log(">>>>>> Healthbar- cell: " + cell);
