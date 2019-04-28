@@ -7,31 +7,61 @@ public class Healthbar : MonoBehaviour
 {
 
     public Transform bar;
-    public float health;
+    public static float currentHealth;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        health = .75f;
+        currentHealth = .50f;
     }
+
 
     void Update()
     {
-        bar.localScale = new Vector3(health, 1f);
-
-        if(Input.GetKeyDown(KeyCode.UpArrow))
+        bar.localScale = new Vector3(currentHealth, 1f);
+        Debug.Log(">>>>>> Healthbar- Update: " + currentHealth);
+        if (currentHealth >= 1f)
         {
-            health = health + .25f;
+            GameObject cell = GameObject.Find("Diatama_baby");
 
-            
+            if(cell != null)
+            {
+
+                Vector3 tmpCellTransform = new Vector3(cell.transform.position.x, cell.transform.position.y, cell.transform.position.z);
+                Destroy(cell);
+
+                currentHealth = .25f;
+
+               // var evolution = Resources.Load<GameObject>("Images/Diatama_evolved"); //("Diatama_evolved", typeof(GameObject));
+               var evolution = Resources.Load("Images/Diatama_evolved") as Texture2D;
+              //  GameObject evolution = Instantiate(Resources.Load("Diatama_evolved", typeof(GameObject))) as GameObject;
+              
+                  if (evolution != null)
+                  Instantiate(evolution, tmpCellTransform, Quaternion.identity);
+                else
+                    Debug.Log("*** Healthbar - evolution not found ");
+            }
+            else
+                Debug.Log(">>>>>> Healthbar- cell: " + cell);
+
         }
 
-        else if(Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            health = health - .25f;
+    }
 
-        }
+    public static void IncreaseHealth(float healthIn)
+    {
+
+        currentHealth = currentHealth + healthIn;
+        //bar.localScale = new Vector3(currentHealth, 1f);
+
+    }
+
+    public static void DecreaseHealth(float healthIn)
+    {
+        currentHealth = currentHealth - healthIn;
+        //bar.localScale = new Vector3(currentHealth, 1f);
+        Debug.Log(">>>>>> Healthbar- DecreaseHealth: " + currentHealth);
     }
 
 }

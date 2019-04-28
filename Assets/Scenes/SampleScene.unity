@@ -634,7 +634,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bar: {fileID: 2118849946}
-  health: 0.75
 --- !u!1001 &1004026788
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -689,6 +688,18 @@ PrefabInstance:
     - target: {fileID: 405256, guid: c44bd9bdc114d4a60932c0087d9d1732, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 405256, guid: c44bd9bdc114d4a60932c0087d9d1732, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 405256, guid: c44bd9bdc114d4a60932c0087d9d1732, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 405256, guid: c44bd9bdc114d4a60932c0087d9d1732, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c44bd9bdc114d4a60932c0087d9d1732, type: 3}
@@ -819,7 +830,7 @@ MonoBehaviour:
   m_Script: {fileID: -780924145, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTrackableName: coffecup
+  mTrackableName: plug
   mPreserveChildSize: 0
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ARObjectTracker_OT.xml
@@ -828,7 +839,7 @@ MonoBehaviour:
   mShowBoundingBox: 1
   mBBoxMin: {x: 0, y: 0, z: 0}
   mBBoxMax: {x: 0.1425, y: 0.095, z: 0.095}
-  mPreviewImage: {fileID: 2800000, guid: 6c5a73c300f1455fb045d361ad5c23ff, type: 3}
+  mPreviewImage: {fileID: 2800000, guid: 4f9795d2aef34c65b89b8842cd5d325b, type: 3}
   mLength: 0.1425
   mWidth: 0.095
   mHeight: 0.095
@@ -5911,7 +5922,7 @@ MonoBehaviour:
   m_Script: {fileID: -780924145, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTrackableName: plug
+  mTrackableName: coffecup
   mPreserveChildSize: 0
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/ARObjectTracker_OT.xml
@@ -5920,7 +5931,7 @@ MonoBehaviour:
   mShowBoundingBox: 1
   mBBoxMin: {x: 0, y: 0, z: 0}
   mBBoxMax: {x: 0.1425, y: 0.095, z: 0.095}
-  mPreviewImage: {fileID: 2800000, guid: 4f9795d2aef34c65b89b8842cd5d325b, type: 3}
+  mPreviewImage: {fileID: 2800000, guid: 6c5a73c300f1455fb045d361ad5c23ff, type: 3}
   mLength: 0.1425
   mWidth: 0.095
   mHeight: 0.095
@@ -6118,6 +6129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ae184600a4904b41ba1deb94a345a86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bar: {fileID: 0}
 --- !u!114 &1571413614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6513,6 +6525,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f143ac8d2a1b5e0488e4be650ad829d2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f143ac8d2a1b5e0488e4be650ad829d2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f143ac8d2a1b5e0488e4be650ad829d2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f143ac8d2a1b5e0488e4be650ad829d2, type: 3}
 --- !u!4 &1637483434 stripped
@@ -6808,11 +6832,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Diatama_teen_idle
       objectReference: {fileID: 0}
-    - target: {fileID: 8189213639261502957, guid: a1edc54359ffea34eb575e9517864d37,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3183074600870819245, guid: a1edc54359ffea34eb575e9517864d37,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6867,11 +6886,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1511585082798354928, guid: a1edc54359ffea34eb575e9517864d37,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1edc54359ffea34eb575e9517864d37, type: 3}
