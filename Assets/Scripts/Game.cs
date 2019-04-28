@@ -18,8 +18,9 @@ public class Game : MonoBehaviour
 	public State babyBorn;
 	public State babySad;
 	public State babyHappy;
+    public State phase2;
 
-	void Awake() {
+    void Awake() {
 		Instance = this;
 	}
 

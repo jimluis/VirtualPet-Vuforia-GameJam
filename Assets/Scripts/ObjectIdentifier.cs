@@ -29,16 +29,22 @@ public class ObjectIdentifier : MonoBehaviour
             if (tb.name == "ObjectTarget_car")
             {
                 Debug.Log(">>>>>> ObjectTarget_car- TrackableName: " + tb.name);
-                Healthbar.DecreaseHealth(.001f);
+                Healthbar.DecreaseHealth(.002f);
             }
 
 
             if (tb.name == "ObjectTarget_tree")
             {
                 Debug.Log(">>>>>> ObjectTarget_tree- TrackableName: " + tb.name);
-                Healthbar.IncreaseHealth(.001f);
+                Healthbar.IncreaseHealth(.002f);
             }
-           
+
+            if (tb.name == "ObjectTarget_earth")
+            {
+                Debug.Log(">>>>>> ObjectTarget_tree- TrackableName: " + tb.name);
+                Healthbar.IncreaseHealth(0.1f);
+            }
+
         }
 
 

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="QCAR_Dataset_config.xsd">
   <TargetSet version="5.0" toolVersion="4.2.0">
+    <ObjectTarget bbox="0.0000 0.0000 0.0000 0.1425 0.0950 0.0950" captureAppVersion="6.5.0" lastSaved="2019-04-28 15:26:05" name="plug2" targetId="fd51b1b9d8a849eb8c55dd8e13c42859" version="2.0" />
+    <ObjectTarget bbox="0.0000 0.0000 0.0000 0.1425 0.0950 0.0950" captureAppVersion="6.5.0" lastSaved="2019-04-28 15:01:08" name="worldcup" targetId="7e77cb9b38474c51be7596305ba27030" version="2.0" />
+    <ObjectTarget bbox="0.0000 0.0000 0.0000 0.1425 0.0950 0.0950" captureAppVersion="6.5.0" lastSaved="2019-04-28 14:11:55" name="cookie" targetId="8e150277c4e341649884e062133756d1" version="2.0" />
     <ObjectTarget bbox="0.0000 0.0000 0.0000 0.1425 0.0950 0.0950" captureAppVersion="6.5.0" lastSaved="2019-04-27 17:41:19" name="coffecup" targetId="ec9cb64b65de44dc8f47dbc3fc19d5cd" version="2.0" />
     <ObjectTarget bbox="0.0000 0.0000 0.0000 0.1425 0.0950 0.0950" captureAppVersion="6.5.0" lastSaved="2019-04-27 14:10:15" name="plug" targetId="a819980252e0451e9e7a39dfb0381e53" version="2.0" />
     <ObjectTarget bbox="0.0000 0.0000 0.0000 0.1425 0.0950 0.0950" captureAppVersion="6.5.0" lastSaved="2019-04-27 14:08:00" name="mouse" targetId="77f9bb1263444557ba9c9123f8e4a18d" version="2.0" />
